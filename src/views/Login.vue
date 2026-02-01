@@ -105,4 +105,10 @@ async function iniciarSesion() {
 .aviso-verificacion {
   color: orange;
 }
+
+@media (max-width: 600px) {
+  button {
+    width: 100%;
+  }
+}
 </style>

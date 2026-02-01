@@ -9,7 +9,7 @@
       <ul v-else class="task-lista">
         <li v-for="task in usuarioTasks" :key="task.id" class="task-item">
           <span>{{ task.text }}</span>
-            {{ task.completed ? 'Completada' : 'Pendiente' }}
+            <b>{{ task.completed ? 'Completada' : 'Pendiente' }}</b>
         </li>
       </ul>
     </div>
@@ -47,5 +47,13 @@ onMounted(() => {
   justify-content: space-between;
   padding: 1rem 0;
   border-bottom: 1px solid #ccc;
+}
+
+@media (max-width: 600px) {
+  .task-item {
+    flex-direction: column;
+    gap: 1rem;
+    align-items: flex-start;
+  }
 }
 </style>

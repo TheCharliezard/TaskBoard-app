@@ -94,4 +94,11 @@ async function registrarse() {
   color: red;
 }
 
+
+@media (max-width: 600px) {
+  button {
+    width: 100%;
+  }
+}
+
 </style>

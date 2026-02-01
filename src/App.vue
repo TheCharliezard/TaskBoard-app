@@ -62,4 +62,16 @@ async function logout() {
 button {
   padding: 0.3rem 0.3rem;
 }
+
+@media (max-width: 600px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .menu {
+    width: 100%;
+    justify-content: center;
+  }
+}
 </style>

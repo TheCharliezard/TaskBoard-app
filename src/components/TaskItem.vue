@@ -69,4 +69,27 @@ function asignarTask() {
 .acciones button {
   padding: 0.3rem 0.3rem;
 }
+
+@media (max-width: 600px) {
+  .task-id {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .task-info {
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .acciones {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 2rem;
+  }
+
+}
 </style>

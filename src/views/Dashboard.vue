@@ -68,4 +68,18 @@ async function handleAssign(task) {
 .error {
   color: red;
 }
+@media (max-width: 450px) {
+  .controles {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .controles select{
+    width: 150px;
+  }
+
+  .controles button {
+    width: 80%;
+  }
+}
 </style>
